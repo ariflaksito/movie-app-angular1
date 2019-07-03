@@ -1,0 +1,12 @@
+
+<ons-list-header>{{title}}</ons-list-header>
+<ons-list>
+	<ons-list-item ng-repeat="m in movies">
+	   	<div class="left" ng-click="movie(m.id)">
+	    	<img class="list-item__thumbnail" src="https://image.tmdb.org/t/p/w500{{m.poster_path}}">
+	   	</div>
+	   	<div class="center" ng-click="movie(m.id)">
+	        <span class="list-item__title">{{m.title}}</span><span class="list-item__subtitle">Rating: {{m.vote_average}}</span>
+	   	</div>
+	</ons-list-item>
+</ons-list>

@@ -1,0 +1,11 @@
+<ons-card>
+   	<img width="100%" src="https://image.tmdb.org/t/p/w500{{movie.backdrop_path}}"/>
+    <div class="title">{{movie.title}}<br /><small>{{movie.tagline}}</small></div>
+    <div class="content">
+    	<ons-list>
+        	<ons-list-item>Rating: {{movie.vote_average}}</ons-list-item>
+        	<ons-list-item>Genre: <span ng-repeat="g in movie.genres">{{g.name}},&nbsp;</span></ons-list-item>
+        	<ons-list-item>{{movie.overview}}</ons-list-item>
+    	</ons-list>
+    </div>
+</ons-card>
